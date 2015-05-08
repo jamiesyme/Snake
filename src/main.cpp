@@ -292,7 +292,7 @@ int main()
 	Window window(winSizeX, winSizeY, "Snake");
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	glOrtho(0.0f, 800.0f, 600.0f, 0.0f, -1.0f, 1.0f);
+	glOrtho(0, winSizeX, winSizeY, 0, -1, 1);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);

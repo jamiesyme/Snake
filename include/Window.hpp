@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-namespace sf { class Window; class Event; }
+#include <SFML/Window.hpp>
 
 
 class Window {
@@ -13,5 +13,5 @@ public:
 	bool pollEvent(sf::Event& e);
 
 private:
-	sf::Window* m_handle;
+	sf::Window m_handle;
 };
